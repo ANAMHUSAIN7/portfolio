@@ -64,7 +64,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 /* ---------- hero ---------- */
 .hero{position:relative;height:calc(100svh - 56px);min-height:560px;overflow:hidden;background:#000;margin-top:56px}
-.hero img{position:absolute;inset:0;object-fit:contain;object-position:50% 100%;transform-origin:50% 100%;mix-blend-mode:normal;transform:scale(1.12);transition:transform 2.4s var(--ease)}
+.hero img{position:absolute;inset:0;object-fit:contain;object-position:50% 100%;transform-origin:50% 100%;mix-blend-mode:normal;filter:grayscale(1);transform:scale(1.12);transition:transform 2.4s var(--ease)}
 .hero.ready img{transform:scale(1)}
 @media (min-width:961px){.hero img{left:34%;width:66%;object-position:55% 100%}}
 .hero h1{position:absolute;left:var(--gut);right:var(--gut);bottom:clamp(28px,6vh,64px);z-index:2;color:#fff;font-weight:500;font-size:clamp(46px,8.4vw,132px);line-height:.98;letter-spacing:-.05em;max-width:15ch}
