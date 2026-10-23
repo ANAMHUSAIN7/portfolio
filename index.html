@@ -130,6 +130,16 @@ section{scroll-margin-top:72px}
 .skill p .rw{color:#d4d4d4;transition:color .25s linear}
 .skill p .rw.on{color:#aaa}
 
+/* ---------- writing ---------- */
+.writing{padding-block:40px 120px}
+.writing-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.article{display:flex;flex-direction:column;justify-content:space-between;min-height:250px;padding:clamp(22px,3vw,36px);background:var(--card);border:1px solid var(--line);transition:background .4s var(--ease),transform .4s var(--ease)}
+.article:hover{background:#171717;transform:translateY(-3px)}
+.article .article-top{display:flex;justify-content:space-between;gap:12px;font-size:11px;color:var(--mute);letter-spacing:.04em;text-transform:uppercase}
+.article h3{font-weight:500;font-size:clamp(24px,2.7vw,36px);letter-spacing:-.05em;line-height:1.05;margin:34px 0 12px;max-width:18ch}
+.article p{font-size:15px;line-height:1.45;color:#a4a4a4;max-width:42ch}
+.article .article-link{display:flex;justify-content:space-between;align-items:center;margin-top:28px;font-size:13px;color:#fff}
+@media (max-width:640px){.writing{padding-block:24px 80px}.writing-grid{grid-template-columns:1fr}.article{min-height:220px}}
 /* ---------- stats ---------- */
 .stats{padding-block:30px 140px}
 .stats-intro{font-family:var(--jak);font-size:clamp(22px,2.1vw,26px);letter-spacing:-.05em;line-height:1.2;max-width:900px;margin:0 0 30px clamp(0px,7vw,92px)}
@@ -259,6 +269,7 @@ footer{padding-bottom:30px}
       <a href="#work"><span data-t="WORK">WORK</span></a>
       <a href="#about"><span data-t="ABOUT">ABOUT</span></a>
       <a href="#expertise"><span data-t="EXPERTISE">EXPERTISE</span></a>
+      <a href="#writing"><span data-t="WRITING">WRITING</span></a>
       <a href="#faq"><span data-t="FAQ">FAQ</span></a>
     </div>
     <a class="cta" href="mailto:anamhusaincc@gmail.com">CONTACT ME <span>&rarr;</span></a>
@@ -266,7 +277,7 @@ footer{padding-bottom:30px}
   </div>
 </nav>
 <div class="drawer" id="drawer">
-  <a href="#work">Work</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#faq">FAQ</a><a href="mailto:anamhusaincc@gmail.com">Contact me &rarr;</a>
+  <a href="#work">Work</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#writing">Writing</a><a href="#faq">FAQ</a><a href="mailto:anamhusaincc@gmail.com">Contact me &rarr;</a>
 </div>
 
 <header class="hero" id="top">
@@ -319,6 +330,23 @@ footer{padding-bottom:30px}
     <a class="case" data-a="scale" href="case-studies/athrux.html" aria-label="Read Athrux case study"><img src="athrux-courage.webp" alt="Athrux fitness campaign visual" loading="lazy" decoding="async"><span class="open">&nearr;</span><div class="meta"><h3>Athrux</h3><span>Client account · Campaign delivery</span></div></a>
     <a class="case" data-a="scale" style="--d:.1s" href="case-studies/utxos.html" aria-label="Read UTXOS case study"><img src="utxos-station.webp" alt="UTXOS brand identity visual" loading="lazy" decoding="async"><span class="open">&nearr;</span><div class="meta"><h3>UTXOS</h3><span>Client account · Brand identity project</span></div></a>
     <a class="case full" data-a="scale" href="case-studies/lumehaus.html" aria-label="Read LumeHaus case study"><img src="lumehaus-billboard.webp" alt="LumeHaus campaign and brand visuals" loading="lazy" decoding="async"><span class="open">&nearr;</span><div class="meta"><h3>LumeHaus</h3><span>Client account · Campaign and content operations</span></div></a>
+  </div>
+</section>
+
+<section class="writing wrap" id="writing">
+  <div class="head"><h2 data-a>Selected Writing</h2><span class="eyebrow" data-a>//Articles</span></div>
+  <p class="work-intro" data-a>Published writing exploring blockchain technology, from foundational concepts to practical applications.</p>
+  <div class="writing-grid">
+    <a class="article" data-a href="https://www.linkedin.com/pulse/exploring-evolution-impact-smart-contracts-anam-husain-auuhc/" target="_blank" rel="noopener noreferrer">
+      <div class="article-top"><span>Blockchain</span><span>March 26, 2024</span></div>
+      <div><h3>Exploring the Evolution and Impact of Smart Contracts</h3><p>An overview of how smart contracts work, their applications, benefits and challenges.</p></div>
+      <div class="article-link"><span>Read on LinkedIn</span><span aria-hidden="true">↗</span></div>
+    </a>
+    <a class="article" data-a style="--d:.1s" href="https://www.linkedin.com/pulse/demystifying-blockchain-beginners-guide-anam-husain-ual2c" target="_blank" rel="noopener noreferrer">
+      <div class="article-top"><span>Blockchain</span><span>March 15, 2024</span></div>
+      <div><h3>Demystifying Blockchain: A Beginner’s Guide</h3><p>A beginner-friendly introduction to blockchain, decentralisation, transparency and its wider applications.</p></div>
+      <div class="article-link"><span>Read on LinkedIn</span><span aria-hidden="true">↗</span></div>
+    </a>
   </div>
 </section>
 
