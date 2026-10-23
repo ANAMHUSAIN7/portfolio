@@ -130,8 +130,8 @@ section{scroll-margin-top:72px}
 .skill p .rw{color:#d4d4d4;transition:color .25s linear}
 .skill p .rw.on{color:#aaa}
 
-/* ---------- writing ---------- */
-.writing{padding-block:40px 120px}
+/* ---------- blog ---------- */
+.blog{padding-block:40px 120px}
 .writing-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .article{display:flex;flex-direction:column;justify-content:space-between;min-height:250px;padding:clamp(22px,3vw,36px);background:var(--card);border:1px solid var(--line);transition:background .4s var(--ease),transform .4s var(--ease)}
 .article:hover{background:#171717;transform:translateY(-3px)}
@@ -139,7 +139,7 @@ section{scroll-margin-top:72px}
 .article h3{font-weight:500;font-size:clamp(24px,2.7vw,36px);letter-spacing:-.05em;line-height:1.05;margin:34px 0 12px;max-width:18ch}
 .article p{font-size:15px;line-height:1.45;color:#a4a4a4;max-width:42ch}
 .article .article-link{display:flex;justify-content:space-between;align-items:center;margin-top:28px;font-size:13px;color:#fff}
-@media (max-width:640px){.writing{padding-block:24px 80px}.writing-grid{grid-template-columns:1fr}.article{min-height:220px}}
+@media (max-width:640px){.blog{padding-block:24px 80px}.writing-grid{grid-template-columns:1fr}.article{min-height:220px}}
 /* ---------- stats ---------- */
 .stats{padding-block:30px 140px}
 .stats-intro{font-family:var(--jak);font-size:clamp(22px,2.1vw,26px);letter-spacing:-.05em;line-height:1.2;max-width:900px;margin:0 0 30px clamp(0px,7vw,92px)}
@@ -269,7 +269,7 @@ footer{padding-bottom:30px}
       <a href="#work"><span data-t="WORK">WORK</span></a>
       <a href="#about"><span data-t="ABOUT">ABOUT</span></a>
       <a href="#expertise"><span data-t="EXPERTISE">EXPERTISE</span></a>
-      <a href="#writing"><span data-t="WRITING">WRITING</span></a>
+      <a href="#blog"><span data-t="BLOG">BLOG</span></a>
       <a href="#faq"><span data-t="FAQ">FAQ</span></a>
     </div>
     <a class="cta" href="mailto:anamhusaincc@gmail.com">CONTACT ME <span>&rarr;</span></a>
@@ -277,7 +277,7 @@ footer{padding-bottom:30px}
   </div>
 </nav>
 <div class="drawer" id="drawer">
-  <a href="#work">Work</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#writing">Writing</a><a href="#faq">FAQ</a><a href="mailto:anamhusaincc@gmail.com">Contact me &rarr;</a>
+  <a href="#work">Work</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#blog">Blog</a><a href="#faq">FAQ</a><a href="mailto:anamhusaincc@gmail.com">Contact me &rarr;</a>
 </div>
 
 <header class="hero" id="top">
@@ -333,24 +333,7 @@ footer{padding-bottom:30px}
   </div>
 </section>
 
-<section class="writing wrap" id="writing">
-  <div class="head"><h2 data-a>Selected Writing</h2><span class="eyebrow" data-a>//Articles</span></div>
-  <p class="work-intro" data-a>Published writing exploring blockchain technology, from foundational concepts to practical applications.</p>
-  <div class="writing-grid">
-    <a class="article" data-a href="https://www.linkedin.com/pulse/exploring-evolution-impact-smart-contracts-anam-husain-auuhc/" target="_blank" rel="noopener noreferrer">
-      <div class="article-top"><span>Blockchain</span><span>March 26, 2024</span></div>
-      <div><h3>Exploring the Evolution and Impact of Smart Contracts</h3><p>An overview of how smart contracts work, their applications, benefits and challenges.</p></div>
-      <div class="article-link"><span>Read on LinkedIn</span><span aria-hidden="true">↗</span></div>
-    </a>
-    <a class="article" data-a style="--d:.1s" href="https://www.linkedin.com/pulse/demystifying-blockchain-beginners-guide-anam-husain-ual2c" target="_blank" rel="noopener noreferrer">
-      <div class="article-top"><span>Blockchain</span><span>March 15, 2024</span></div>
-      <div><h3>Demystifying Blockchain: A Beginner’s Guide</h3><p>A beginner-friendly introduction to blockchain, decentralisation, transparency and its wider applications.</p></div>
-      <div class="article-link"><span>Read on LinkedIn</span><span aria-hidden="true">↗</span></div>
-    </a>
-  </div>
-</section>
-
-<section class="skills wrap" id="expertise">
+<section class=s="skills wrap" id="expertise">
   <div class="head"><h2 data-a>My Skills</h2><span class="eyebrow" data-a>//Expertise</span></div>
   <div class="skill" data-a><h3>Project Management</h3><p>Project coordination, requirements and scope clarification, timelines, deliverables, action tracking and handovers across concurrent workstreams.</p></div>
   <div class="skill" data-a><h3>Art Direction</h3><p>Creative campaign workflows from ideation and moodboards through pre-production, shoots, post-production, publishing and reporting.</p></div>
